@@ -1,0 +1,44 @@
+[project]
+name = "attractor-basin-cognition"
+version = "0.1.0"
+description = "Attractor-basin primitives for cognitive signal routing, field dynamics, and host-neutral mental model substrates."
+readme = "README.md"
+authors = [{name = "Dr. Mani Saint Victor"}]
+license = {text = "Apache-2.0"}
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.24.0",
+    "pydantic>=2.0.0",
+    "elume>=0.4.0",
+]
+keywords = [
+    "attractor-basins",
+    "cognition",
+    "hopfield-network",
+    "semantic-fields",
+    "mental-models",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/bionicbutterfly13/attractor-basin-cognition"
+Repository = "https://github.com/bionicbutterfly13/attractor-basin-cognition"
+Issues = "https://github.com/bionicbutterfly13/attractor-basin-cognition/issues"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["abcognition*"]
